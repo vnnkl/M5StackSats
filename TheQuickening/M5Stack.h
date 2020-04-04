@@ -53,7 +53,7 @@ void screen_page_input()
   M5.Lcd.setTextColor(TFT_WHITE);
   M5.Lcd.setTextSize(3);
   M5.Lcd.setCursor(0, 40);
-  M5.Lcd.println("Amount then C");
+  M5.Lcd.println("Amount then OK");
   M5.Lcd.println("");
   M5.Lcd.println(on_currency.substring(3) + ": ");
   M5.Lcd.println("");
@@ -61,8 +61,8 @@ void screen_page_input()
   M5.Lcd.println("");
   M5.Lcd.println("");
   M5.Lcd.setTextSize(2);
-  M5.Lcd.setCursor(50, 200);
-  M5.Lcd.println("TO RESET PRESS A");
+  M5.Lcd.setCursor(40, 220);
+  M5.Lcd.println("Cancel           OK");
 }
 
 void screen_page_processing()
