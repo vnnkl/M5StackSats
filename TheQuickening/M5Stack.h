@@ -1,6 +1,7 @@
 
 
 #include <M5Stack.h> 
+#include "Notes/Nokia.h"
 #define KEYBOARD_I2C_ADDR     0X08
 #define KEYBOARD_INT          5
 
@@ -81,12 +82,7 @@ M5.Lcd.setCursor(60, 80);
 M5.Lcd.setTextSize(4);
 M5.Lcd.setTextColor(TFT_GREEN);
 M5.Lcd.println("COMPLETE");
-M5.Speaker.tone(500);
-delay(500);
-M5.Speaker.tone(1000);
-delay(500);
-M5.Speaker.mute();
-delay(2000);
+playCompleteTune();
 }
 
 void screen_cancel()
